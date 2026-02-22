@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Spoon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/png" href="food images\logo.png">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#"><img src="food images\logo.png" class="logo"></a>
+
+            <ul class="navlist">
+                <li><a href="#" class="btn">Home</a></li>
+                <li><a href="#" class="btn">Menu</a></li>
+                <li><a href="#" class="btn">Services</a></li>
+                <li><a href="#" class="btn">About us</a></li>
+                <li><a href="#" class="btn">Contact</a></li>
+            </ul>
+            <div class="desktop">
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+
+                <a href="#" class="button signin-btn">
+                    Sign In
+                    &nbsp;
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#" class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+            <!-- LOGIN -->
+            <div class="login-container" id="loginContainer">
+                <div class="login-box">
+                    <h2>Sign In</h2>
+                    <input type="text" id="username" placeholder="Enter Username">
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <div class="login-buttons">
+                        <button id="loginBtn">Login</button>
+                        <button id="closeLogin">Cancel</button>
+                    </div>
+                </div>
+            </div>
+            <!--mobile menu-->
+            <ul class="mobile-menu .mobile-menu-active">
+                <li><a href="#" class="btn">Home</a></li>
+                <li><a href="#" class="btn">Menu</a></li>
+                <li><a href="#" class="btn">Services</a></li>
+                <li><a href="#" class="btn">About us</a></li>
+                <li><a href="#" class="btn">Contact</a></li>
+                <li>
+                    <a href="#" class="button">
+                        Sign In
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Section-->
+    <main>
+        <section>
+            <div class="hero-section flex wrapper gap-4">
+                <div class="inner-content">
+                    <h1>
+                        <span class="meal">Your Favorite Meals,<br></span>
+                        <span>Just One Click Away</span>
+                    </h1>
+                    <p class="para">
+                        Experience the joy of ordering food online with ease. Browse, choose,
+                        and enjoy restaurant-quality meals without leaving your home.<br><br>
+                    </p>
+
+                    <div class="flex gap-2">
+                        <a href="#" class="button flex">Order Now</a>
+                        <a href="#" class="social-media">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+
+                        <a href="#" class="social-media">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="social-media">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+
+                        <a href="#" class="social-media">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="image-container">
+                    <img src="food images\hero.png">
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper top">
+                <div class="text-center">
+                    <h2>OUR SERVICES</h2>
+                </div>
+                <div class="flex text-center">
+                    <div class="service-card flex">
+                        <div class="images">
+                            <img src="food images\easy to order.png">
+                        </div>
+                        <p>Easy to order, just a tap away!</p>
+                    </div>
+
+                    <div class="service-card flex">
+                        <div class="images">
+                            <img src="food images\favourite.png">
+                        </div>
+                        <p>Love it? Save it. Crave it? Order it.</p>
+                    </div>
+
+                    <div class="service-card flex">
+                        <div class="images">
+                            <img src="food images\delivered.png">
+                        </div>
+                        <p>Fast delivery straight to your door.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper top">
+
+                <div class="text-center p-bottom">
+                    <h2 class="menu">MENU</h2>
+                </div>
+
+                <div class="card-list">
+
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="food images/Biryani.jpg" alt="Biryani">
+                        </div>
+                        <h4>BIRYANI</h4>
+                        <h4>₹ 150</h4>
+                        <a href="#" class="button">Add to Cart</a>
+                    </div>
+
+
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="food images/burger.png" alt="Burger">
+                        </div>
+                        <h4>BURGER</h4>
+                        <h4>₹ 120</h4>
+                        <a href="#" class="button">Add to Cart</a>
+                    </div>
+
+
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="food images/noodles_no_background.png" alt="Noodles">
+                        </div>
+                        <h4>NOODLES</h4>
+                        <h4>₹ 150</h4>
+                        <a href="#" class="button">Add to Cart</a>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="food images/Thali.jpg" alt="Thali">
+                        </div>
+                        <h4>THALI</h4>
+                        <h4>₹ 200</h4>
+                        <a href="#" class="button">Add to Cart</a>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="food images\Pizza.jpg" alt="Pizza">
+                        </div>
+                        <h4>PIZZA</h4>
+                        <h4>₹ 250</h4>
+                        <a href="#" class="button">Add to Cart</a>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="food images/dessert pastry.jpg" alt="Dessert">
+                        </div>
+                        <h4>DESSERT</h4>
+                        <h4>₹ 150</h4>
+                        <a href="#" class="button">Add to Cart</a>
+
+                    </div>
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="food images\Chicken-Lollipop-.jpg" alt="Chicken Lollipop">
+                        </div>
+                        <h4>CHICKEN LOLLIPOP</h4>
+                        <h4>₹ 100</h4>
+                        <a href="#" class="button">Add to Cart</a>
+                    </div>
+
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="food images/Egg-Curry.jpg" alt="Egg Curry">
+                        </div>
+                        <h4>EGG CURRY</h4>
+                        <h4>₹ 120</h4>
+                        <a href="#" class="button">Add to Cart</a>
+                    </div>
+                    <div class="order-card">
+                        <div class="card-image">
+                            <img src="food images/icecream.webp" alt="Ice Cream">
+                        </div>
+                        <h4>ICE CREAM</h4>
+                        <h4>₹ 100</h4>
+                        <a href="#" class="button">Add to Cart</a>
+                    </div>
+        </section>
+    </main>
+
+    <footer>
+        <footer class="footer">
+    <div class="footer-container wrapper">
+
+        <div class="footer-col">
+            <img src="food images/logo.png" class="footer-logo" alt="Logo">
+            <p>
+                Experience the joy of ordering food online with ease.
+                Browse, choose, and enjoy restaurant-quality meals without leaving your home.
+            </p>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3>Contact Us</h3>
+            <p><i class="fa-solid fa-location-dot"></i> 123 Food Street, Your City</p>
+            <p><i class="fa-solid fa-phone"></i> +91 930034009</p>
+            <p><i class="fa-solid fa-envelope"></i> support@foodorder.com</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Food Ordering Website | All Rights Reserved</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
