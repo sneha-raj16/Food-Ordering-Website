@@ -1,4 +1,3 @@
-// ========== MOBILE MENU TOGGLE ==========
 const bars = document.querySelector(".bars");
 const mobileMenu = document.querySelector(".mobile-menu");
 
@@ -6,30 +5,29 @@ bars.addEventListener("click", () => {
     mobileMenu.classList.toggle("mobile-menu-active");
 });
 
-
-// ========== LOGIN POPUP ==========
-const signInBtn = document.querySelector(".signin-btn");
+const signInButtons = document.querySelectorAll(".signin-btn");
 const loginContainer = document.getElementById("loginContainer");
 const closeLogin = document.getElementById("closeLogin");
 
-signInBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    loginContainer.style.display = "flex";
+signInButtons.forEach(button => {
+    button.addEventListener("click", (e) => {
+        e.preventDefault();
+        loginContainer.style.display = "flex";
+
+        mobileMenu.classList.remove("mobile-menu-active");
+    });
 });
 
 closeLogin.addEventListener("click", () => {
     loginContainer.style.display = "none";
 });
 
-// Close login when clicking outside the box
 window.addEventListener("click", (e) => {
     if (e.target === loginContainer) {
         loginContainer.style.display = "none";
     }
 });
 
-
-// ========== ADD TO CART FUNCTION ==========
 const cartValue = document.querySelector(".cart-value");
 const addToCartButtons = document.querySelectorAll(".order-card .button");
 
@@ -43,8 +41,6 @@ addToCartButtons.forEach(button => {
     });
 });
 
-
-// ========== SIMPLE LOGIN VALIDATION ==========
 const loginBtn = document.getElementById("loginBtn");
 
 loginBtn.addEventListener("click", () => {
