@@ -400,7 +400,7 @@ img{
 
 
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 768px){
   
   .navbar{
     width: 80%;
@@ -442,6 +442,10 @@ img{
     .mobile-menu-active{
         left:50%;
         transform: translateX(-50%);
+    }
+
+    .bars{
+        display: block;
     }
 
     .flex{
