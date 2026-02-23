@@ -133,3 +133,43 @@ function removeItem(index) {
     updateCartCount();
     displayCart();
 }
+
+@media (max-width: 768px) {
+
+    
+    .cart-box {
+        top: auto;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        max-height: 70vh;
+        border-radius: 15px 15px 0 0;
+        animation: slideUp 0.3s ease;
+    }
+
+    @keyframes slideUp {
+        from { transform: translateY(100%); }
+        to { transform: translateY(0); }
+    }
+
+    /* Order cards stack properly */
+    .order-card {
+        width: 100%;
+    }
+
+    /* Buttons full width */
+    .order-card .button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Navbar spacing */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signin-btn {
+        margin-top: 10px;
+    }
+}
