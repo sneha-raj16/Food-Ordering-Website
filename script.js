@@ -196,3 +196,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+const signinButtons = document.querySelectorAll(".signin-btn");
+const loginContainer = document.getElementById("loginContainer");
+const closeLogin = document.getElementById("closeLogin");
+
+signinButtons.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        loginContainer.classList.add("active");
+    });
+});
+
+closeLogin.addEventListener("click", function () {
+    loginContainer.classList.remove("active");
+});
+
+loginContainer.addEventListener("click", function (e) {
+    if (e.target === loginContainer) {
+        loginContainer.classList.remove("active");
+    }
+});
