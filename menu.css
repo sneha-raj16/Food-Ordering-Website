@@ -1,0 +1,49 @@
+.wrapper{
+    max-width: 1400px;
+    margin:auto;
+}
+
+.top{
+    padding-top:5rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.p-bottom {
+    margin-bottom: 30px;
+}
+
+.card-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.order-card {
+    width: 220px;
+    background: #f6f6f6;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.order-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.card-image img {
+    width: 100%;
+    height: 150px;
+    
+    border-radius: 8px;
+}
+
+.order-card h4 {
+    margin: 8px 0;
+}
+
