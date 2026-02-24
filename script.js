@@ -28,7 +28,7 @@ window.addEventListener("click", (e) => {
     }
 });
 
-const cartValue = document.querySelector(".cart-value");
+const cartValues = document.querySelector(".cart-value");
 const addToCartButtons = document.querySelectorAll(".order-card .button");
 
 let cartCount = 0;
