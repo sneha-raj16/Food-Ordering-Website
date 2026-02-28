@@ -8,20 +8,44 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenu.classList.toggle("mobile-menu-active");
     });
 
+    document.addEventListener("DOMContentLoaded", function () {
+
     const signInButtons = document.querySelectorAll(".signin-btn");
     const loginContainer = document.getElementById("loginContainer");
     const closeLogin = document.getElementById("closeLogin");
+    const loginBtn = document.getElementById("loginBtn");
 
-    signInButtons.forEach(function (button) {
-        button.addEventListener("click", function (e) {
+    signInButtons.forEach(function (btn) {
+        btn.addEventListener("click", function (e) {
             e.preventDefault();
-            loginContainer.style.display = "flex";
+            loginContainer.classList.add("active");
         });
     });
 
     closeLogin.addEventListener("click", function () {
-        loginContainer.style.display = "none";
+        loginContainer.classList.remove("active");
     });
+
+    loginContainer.addEventListener("click", function (e) {
+        if (e.target === loginContainer) {
+            loginContainer.classList.remove("active");
+        }
+    });
+
+    loginBtn.addEventListener("click", function () {
+
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        if (username === "" || password === "") {
+            alert("Please enter username and password!");
+        } else {
+            alert("Login Successful!");
+            loginContainer.classList.remove("active");
+        }
+    });
+
+});
 
 
     const cartIcon = document.querySelector(".cart-icon");
