@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#"><img src="food images\logo.png" class="logo"></a>
+
+            <ul class="navlist">
+                <li><a href="index.html" class="btn">Home</a></li>
+                <li><a href="menu.html" class="btn">Menu</a></li>
+                <li><a href="#" class="btn">Services</a></li>
+                <li><a href="#" class="btn">About us</a></li>
+                <li><a href="#" class="btn">Contact</a></li>
+            </ul>
+            <div class="desktop">
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-value">0</span>
+                </a>
+
+                <a href="#" class="button signin-btn">
+                    Sign In
+                    &nbsp;
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#" class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+            <div class="cart-modal" id="cartModal">
+                <div class="cart-box">
+                    <h2>Your Cart</h2>
+                    <div id="cartItems"></div>
+                    <h3 id="cartTotal">Total: ₹ 0</h3>
+                    <button id="closeCart">Close</button>
+                    <div>
+                </div>
+            </div>
+
+            <div class="login-container" id="loginContainer">
+                <div class="login-box">
+                    <h2>Sign In</h2>
+                    <input type="text" id="username" placeholder="Enter Username">
+                    <input type="password" id="password" placeholder="Enter Password">
+                    <div class="login-buttons">
+                        <button id="loginBtn">Login</button>
+                        <button id="closeLogin">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="mobile-menu mobile-menu-active">
+                <li><a href="#" class="btn">Home</a></li>
+                <li><a href="#" class="btn">Menu</a></li>
+                <li><a href="#" class="btn">Services</a></li>
+                <li><a href="#" class="btn">About us</a></li>
+                <li><a href="#" class="btn">Contact</a></li>
+                <li>
+                    <a href="#" class="button signin-btn">
+                        Sign In
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+     <section>
+            <div class="wrapper top">
+                <div class="text-center">
+                    <h2>OUR SERVICES</h2>
+                </div>
+                <div class="flex text-center">
+                    <div class="service-card flex">
+                        <div class="images">
+                            <img src="food images\easy to order.png">
+                        </div>
+                        <p>Easy to order, just a tap away!</p>
+                    </div>
+
+                    <div class="service-card flex">
+                        <div class="images">
+                            <img src="food images\favourite.png">
+                        </div>
+                        <p>Love it? Save it. Crave it? Order it.</p>
+                    </div>
+
+                    <div class="service-card flex">
+                        <div class="images">
+                            <img src="food images\delivered.png">
+                        </div>
+                        <p>Fast delivery straight to your door.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <script src="script.js"></script>
+</body>
+</html>
