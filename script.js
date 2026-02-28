@@ -1,73 +1,73 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-const bars = document.querySelector(".bars");
-const mobileMenu = document.querySelector(".mobile-menu");
+    const bars = document.querySelector(".bars");
+    const mobileMenu = document.querySelector(".mobile-menu");
 
-bars.addEventListener("click", () => {
-    mobileMenu.classList.toggle("mobile-menu-active");
-});
-
-
-const signInButtons = document.querySelectorAll(".signin-btn");
-const loginContainer = document.getElementById("loginContainer");
-const closeLogin = document.getElementById("closeLogin");
-const loginBtn = document.getElementById("loginBtn");
-
-let isLoggedIn = false;
-
-signInButtons.forEach(btn => {
-    btn.addEventListener("click", (e) => {
-        e.preventDefault();
-
-        if (!isLoggedIn) {
-            loginContainer.style.display = "flex";
-        } else {
-            logoutUser();
-        }
+    bars.addEventListener("click", () => {
+        mobileMenu.classList.toggle("mobile-menu-active");
     });
-});
-
-closeLogin.addEventListener("click", () => {
-    loginContainer.style.display = "none";
-});
 
 
-loginBtn.addEventListener("click", () => {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
+    const signInButtons = document.querySelectorAll(".signin-btn");
+    const loginContainer = document.getElementById("loginContainer");
+    const closeLogin = document.getElementById("closeLogin");
+    const loginBtn = document.getElementById("loginBtn");
 
-    if (username.trim() !== "" && password.trim() !== "") {
+    let isLoggedIn = false;
 
-        isLoggedIn = true;
+    signInButtons.forEach(btn => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
 
-        signInButtons.forEach(btn => {
-            btn.innerHTML = `
+            if (!isLoggedIn) {
+                loginContainer.style.display = "flex";
+            } else {
+                logoutUser();
+            }
+        });
+    });
+
+    closeLogin.addEventListener("click", () => {
+        loginContainer.style.display = "none";
+    });
+
+
+    loginBtn.addEventListener("click", () => {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username.trim() !== "" && password.trim() !== "") {
+
+            isLoggedIn = true;
+
+            signInButtons.forEach(btn => {
+                btn.innerHTML = `
                 Logout 
                 <i class="fa-solid fa-arrow-right"></i>
             `;
-        });
+            });
 
-        loginContainer.style.display = "none";
-        alert("Login Successful!");
+            loginContainer.style.display = "none";
+            alert("Login Successful!");
 
-    } else {
-        alert("Please enter username and password.");
-    }
-});
+        } else {
+            alert("Please enter username and password.");
+        }
+    });
 
 
-function logoutUser() {
-    isLoggedIn = false;
+    function logoutUser() {
+        isLoggedIn = false;
 
-    signInButtons.forEach(btn => {
-        btn.innerHTML = `
+        signInButtons.forEach(btn => {
+            btn.innerHTML = `
             Sign In 
             <i class="fa-solid fa-arrow-right"></i>
         `;
-    });
+        });
 
-    alert("Logged Out Successfully!");
-}
+        alert("Logged Out Successfully!");
+    }
 
     const cartIcon = document.querySelector(".cart-icon");
     const cartModal = document.getElementById("cartModal");
@@ -163,7 +163,7 @@ function logoutUser() {
             const name = card.querySelectorAll("h4")[0].innerText;
             const priceText = card.querySelectorAll("h4")[1].innerText;
             const price = parseInt(priceText.replace("₹", "").trim());
-            
+
             let existingItem = cart.find(item => item.name === name);
 
             if (existingItem) {
