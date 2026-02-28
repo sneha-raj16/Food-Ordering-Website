@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-
 const bars = document.querySelector(".bars");
 const mobileMenu = document.querySelector(".mobile-menu");
 
