@@ -1,3 +1,24 @@
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1.5rem;
+    background-color: rgb(242, 175, 50);
+    width: 80%;
+    border-radius: 10rem;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+
+.navlist{
+    display:flex;
+    align-items: center;
+    gap: 3rem;
+    margin-right:150px;
+    font-weight:bold;
+}
+
 .wrapper{
     max-width: 1400px;
     margin:auto;

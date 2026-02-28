@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
         mobileMenu.classList.toggle("mobile-menu-active");
     });
 
-    document.addEventListener("DOMContentLoaded", function () {
 
     const signInButtons = document.querySelectorAll(".signin-btn");
     const loginContainer = document.getElementById("loginContainer");
@@ -145,78 +144,3 @@ document.addEventListener("DOMContentLoaded", function () {
     function saveCart() {
         localStorage.setItem("cart", JSON.stringify(cart));
     }
-
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-
-    const addToCartButtons = document.querySelectorAll(".order-card .button");
-    const cartValue = document.querySelector(".cart-value");
-    const cartModal = document.getElementById("cartModal");
-    const cartItems = document.getElementById("cartItems");
-    const cartTotal = document.getElementById("cartTotal");
-    const closeCart = document.getElementById("closeCart");
-    const cartIcon = document.querySelector(".cart-icon");
-
-    let total = 0;
-    let count = 0;
-
-    addToCartButtons.forEach(function (button) {
-        button.addEventListener("click", function (event) {
-            event.preventDefault();
-
-            const card = button.parentElement;
-            const itemName = card.querySelector("h4").innerText;
-            const itemPriceText = card.querySelectorAll("h4")[1].innerText;
-            const itemPrice = parseInt(itemPriceText.replace("₹", "").trim());
-
-            
-            const item = document.createElement("p");
-            item.innerText = itemName + " - ₹ " + itemPrice;
-            cartItems.appendChild(item);
-
-            total += itemPrice;
-            cartTotal.innerText = "Total: ₹ " + total;
-
-            count++;
-            cartValue.innerText = count;
-        });
-    });
-    
-    cartIcon.addEventListener("click", function (e) {
-        e.preventDefault();
-        cartModal.style.display = "flex";
-    });
-
-    closeCart.addEventListener("click", function () {
-        cartModal.style.display = "none";
-    });
-
-
-    const signinButtons = document.querySelectorAll(".signin-btn");
-    const loginContainer = document.getElementById("loginContainer");
-    const closeLogin = document.getElementById("closeLogin");
-
-    signinButtons.forEach(function (btn) {
-        btn.addEventListener("click", function (e) {
-            e.preventDefault();
-            loginContainer.style.display = "flex";
-        });
-    });
-
-    closeLogin.addEventListener("click", function () {
-        loginContainer.style.display = "none";
-    });
-
-
-    const bars = document.querySelector(".bars");
-    const mobileMenu = document.querySelector(".mobile-menu");
-
-    bars.addEventListener("click", function (e) {
-        e.preventDefault();
-        mobileMenu.classList.toggle("mobile-menu-active");
-    });
-
-});
