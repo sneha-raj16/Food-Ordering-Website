@@ -198,17 +198,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const toggle = document.querySelector(".dropdown-toggle");
-    const menu = document.querySelector(".dropdown-menu");
+    const dropdown = document.querySelector(".dropdown");
+    const dropdownBtn = dropdown.querySelector("a");
+    const dropdownMenu = dropdown.querySelector(".dropdown-menu");
 
-    toggle.addEventListener("click", function (e) {
+    dropdownBtn.addEventListener("click", function (e) {
         e.preventDefault();
-        menu.classList.toggle("show");
+        dropdownMenu.classList.toggle("active");
     });
 
+    // Close when clicking outside
     document.addEventListener("click", function (e) {
-        if (!e.target.closest(".dropdown")) {
-            menu.classList.remove("show");
+        if (!dropdown.contains(e.target)) {
+            dropdownMenu.classList.remove("active");
         }
     });
 

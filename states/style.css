@@ -233,14 +233,22 @@ li{
 }
 
 .menu{
-    color:#f6f6f6;
+    color: #ee9805;
     text-align: center;
-    padding-bottom: 6px;
+     letter-spacing: 2px;
+    padding-top: 50px;
     font-size: 50px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
+
+.menu-famous{
+    color: #f8f8f8;
+    letter-spacing: 2px;
+    font-size: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 .card-list {
     display: flex;
@@ -315,24 +323,33 @@ li{
     background: white;
     list-style: none;
     padding: 10px 0;
-    width: 220px;
+    min-width: 220px;
     max-height: 300px;
     overflow-y: auto;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 
-    display: none;
-    z-index: 1000;
+    display: none;  
+    border-radius: 10px;
+    z-index: 999;
 }
 
-.dropdown-menu.show {
+.dropdown-menu.active {
     display: block;
 }
 
 .dropdown-menu li {
-    padding: 8px 15px;
+    padding: 8px 20px;
 }
 
-.dropdown-menu li:hover {
-    background: #f2f2f2;
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-menu li a:hover {
+    background: #f2af32;
+    color: white;
+    border-radius: 6px;
 }
