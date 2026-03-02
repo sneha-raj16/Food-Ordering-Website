@@ -213,3 +213,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+//form
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();  
+
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    var result = document.getElementById("result");
+
+    if(name == "" || email == "" || message == "") {
+        result.style.color = "red";
+        result.innerHTML = "Please fill all fields!";
+    } 
+    else {
+        result.style.color = "green";
+        result.innerHTML = "Message sent successfully!";
+        
+        document.getElementById("contactForm").reset();
+    }
+
+});
+
+

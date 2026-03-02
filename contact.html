@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Hungry Spoon</title>
+<link rel="stylesheet" href="contact.css">
 </head>
+<body>
+
 
 <body>
     <header>
@@ -82,36 +76,43 @@
         </nav>
     </header>
 
-    <section>
-        <div class="wrapper top">
-            <div class="text-center">
-                <h2>OUR SERVICES</h2>
-            </div>
-            <div class="flex text-center">
-                <div class="service-card flex">
-                    <div class="images">
-                        <img src="food images\easy to order.png">
-                    </div>
-                    <p>Easy to order, just a tap away!</p>
-                </div>
+<section class="contact-section">
 
-                <div class="service-card flex">
-                    <div class="images">
-                        <img src="food images\favourite.png">
-                    </div>
-                    <p>Love it? Save it. Crave it? Order it.</p>
-                </div>
+    
+    <div class="contact-left">
+        <h1>Contact Us</h1>
+        <p>
+            Have questions or feedback? We’d love to hear from you. 
+            Reach out and our team will respond as soon as possible.
+        </p>
 
-                <div class="service-card flex">
-                    <div class="images">
-                        <img src="food images\delivered.png">
-                    </div>
-                    <p>Fast delivery straight to your door.</p>
-                </div>
-            </div>
+        <div class="info">
+            <h3>📍 Address</h3>
+            <p>123 Food Street,City</p>
         </div>
-    </section>
-    <script src="script.js"></script>
-</body>
 
+        <div class="info">
+            <h3>📞 Phone</h3>
+            <p>+91 930034009</p>
+        </div>
+
+        <div class="info">
+            <h3>📧 Email</h3>
+            <p>support@hungryspoon.com</p>
+        </div>
+    </div>
+
+    <div class="contact-right"id="contactform">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Subject">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+<script src="script.js"></script>
+
+</body>
 </html>

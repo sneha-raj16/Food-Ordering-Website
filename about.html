@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Hungry Spoon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="img/png" href="food images\logo.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -67,11 +68,11 @@
                 </div>
 
                 <ul class="mobile-menu mobile-menu-active">
-                    <li><a href="#" class="btn">Home</a></li>
-                    <li><a href="#" class="btn">Menu</a></li>
-                    <li><a href="#" class="btn">Services</a></li>
-                    <li><a href="#" class="btn">About us</a></li>
-                    <li><a href="#" class="btn">Contact</a></li>
+                    <li><a href="index.html" class="btn">Home</a></li>
+                    <li><a href="menu.html" class="btn">Menu</a></li>
+                    <li><a href="services.html" class="btn">Services</a></li>
+                    <li><a href="about.html" class="btn">About us</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
                     <li>
                         <a href="#" class="button signin-btn">
                             Sign In
@@ -82,36 +83,44 @@
         </nav>
     </header>
 
-    <section>
-        <div class="wrapper top">
-            <div class="text-center">
-                <h2>OUR SERVICES</h2>
-            </div>
-            <div class="flex text-center">
-                <div class="service-card flex">
-                    <div class="images">
-                        <img src="food images\easy to order.png">
-                    </div>
-                    <p>Easy to order, just a tap away!</p>
-                </div>
+<section class="about-section">
 
-                <div class="service-card flex">
-                    <div class="images">
-                        <img src="food images\favourite.png">
-                    </div>
-                    <p>Love it? Save it. Crave it? Order it.</p>
-                </div>
+    <div class="about-left">
+        <h1>About Us</h1>
 
-                <div class="service-card flex">
-                    <div class="images">
-                        <img src="food images\delivered.png">
-                    </div>
-                    <p>Fast delivery straight to your door.</p>
-                </div>
+        <p>
+            Welcome to <b>Hungry Spoon!</b> We deliver fresh, delicious and 
+            high-quality <br>food right to your doorstep. Our mission is to make 
+            <br>food ordering simple, fast and enjoyable for everyone.
+        </p>
+
+        <div class="feature">
+            <div class="icon">🥗</div>
+            <div>
+                <h3>Fresh Ingredients</h3>
+                <p>We use only high-quality and fresh ingredients.</p>
             </div>
         </div>
-    </section>
-    <script src="script.js"></script>
-</body>
 
+        <div class="feature">
+            <div class="icon">🛵</div>
+            <div>
+                <h3>Fast Delivery</h3>
+                <p>Quick and safe doorstep delivery service.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="icon">👨‍🍳</div>
+            <div>
+                <h3>Best Quality</h3>
+                <p>Prepared by professional chefs with love.</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
 </html>
